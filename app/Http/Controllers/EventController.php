@@ -38,9 +38,6 @@ class EventController extends Controller
         } catch (Exception $e) {
           return redirect('/event')->With('error',  $e->getMessage());
         }
-
-        
-     
     }
 
     /**
@@ -102,9 +99,6 @@ class EventController extends Controller
         }
 
     }
-
-
-
     /**
      * Update the specified resource in storage.
      */
@@ -138,7 +132,6 @@ class EventController extends Controller
         }
 
     }
-
     /**
      * Remove the specified resource from storage.
      */
@@ -161,7 +154,9 @@ class EventController extends Controller
 
         
     }
-
+    /**
+     * decrypt the string.
+    */
     protected function decryptString($data){
         try {
             $id = Crypt::decryptString($data);

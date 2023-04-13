@@ -44,7 +44,6 @@
                   @else
                      <td></td>
                   @endif
-                  
                   <td>
                      @if(!empty($event->image))
                          <img width="75" src="{{url('storage/'.$event->image)}}" class="img-fluid" alt="Responsive image">
@@ -94,11 +93,9 @@
                  @endif
                   
               </ul>
-      </nav>
+            </nav>
        </div>
-
       </div>
-  
    </div>
    <form style="display:none" url="{{url('event')}}" id="del-form" method="post">
       @csrf

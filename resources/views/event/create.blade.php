@@ -4,7 +4,6 @@
 
  @section('page_content')
     @parent
-
    <div class="container-fluid">
       <div class="col-md-12">
         <h3 style="    font-size: 24px;padding: 10px 0px; font-weight: 900;">Add Event</h5>
@@ -51,5 +50,4 @@
       </div>
   
    </div>
- 
   @endsection
